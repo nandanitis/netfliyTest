@@ -1,0 +1,128 @@
+.box
+{
+    margin: auto;
+    max-width: 1200px;
+    background-color: #7ec2c4;
+    min-height: 500px;
+    display: flex;      
+    flex-direction: column;
+    align-items: center;
+    min-height: 150vh;
+    
+}
+
+.movieImage{
+    margin: 10px;
+    width: 250px;
+    height: 350px;
+    border-radius: 5px;
+    border: 2px solid rgb(0, 110, 255);
+}
+
+.titleSpan{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+}
+
+.details{
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+.details span{
+    padding: 0px 5px;
+}
+
+
+.plot{
+    margin:15px 0px;
+    max-width: 800px;
+}
+
+.plot span {
+    color: purple;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+/* //reviews */
+.reviewStarts{
+   position: relative;
+}
+
+.ALL-Reviews{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 30px;    
+}
+
+.addReview{
+    padding: 10px;
+    border-radius: 10px;
+    background-color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    margin-left: 30px;
+    position: absolute;
+    right: -180px;
+    top:30px
+    
+  }
+  
+  .addReview:hover{
+      
+      background-color: #e4c9c9;
+      cursor: pointer;
+  }
+
+
+.review-details {
+    background: #fff;
+    border-radius: 4px;
+    margin: 20px auto;
+    margin: 30px;
+    padding: 20px;
+    position: relative;
+    min-width: 50vh;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.05);
+    border-radius: 10px;
+    border: 2px solid black;
+    transition: transform 250ms;
+    position: relative;
+    
+  }
+
+  .review-details:hover{
+    transform: translateY(-10px);
+    background-color: rgb(242, 226, 226);
+
+}
+
+
+.review-details h4 {
+    margin: 0 0 10px 0;
+    font-size: 1.2em;
+    color: var(--primary);
+}
+.review-details p {
+    margin: 0;
+    font-size: 1.1em;
+    color: #555;
+}
+.review-details span {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    background: #f1f1f1;
+    padding: 6px;
+    border-radius: 50%;
+    color: #333;
+}
+
+.reviewTitle{
+    margin-top: 30px;
+    color: white;
+}
+

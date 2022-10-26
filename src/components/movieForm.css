@@ -1,0 +1,55 @@
+
+label, textarea {
+    display: block;
+  }
+  textarea {
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  .buttonToAdd {
+    background: var(--primary);
+    border: 0;
+    color: black;
+    background-color: rgb(26, 194, 194);
+    padding: 12px;
+    font-family: "Poppins";
+    border-radius: 4px;
+    cursor: pointer;
+    position: absolute;
+    right:20px
+  }
+  .buttonToAdd:hover{
+    background-color: aqua;
+    cursor: pointer;
+  }
+  div.error {
+    padding: 10px;
+    background: #ff0303;
+    border: 1px solid var(--error);
+    color: var(--error);
+    border-radius: 4px;
+    margin: 20px 0;
+  }
+  .enterJson{
+    min-height: 25vh;
+    min-width: 20vh;
+  }
+
+
+  label, input {
+    display: block;
+  }
+  input {
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }

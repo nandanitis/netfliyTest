@@ -1,0 +1,238 @@
+
+ #navBtn {
+    height: 60px;
+    width: 100%;
+    position: relative;
+    cursor: pointer;
+    border-bottom: 1px solid var(--secondaryColor);
+    display: none;
+}
+ #navBtn i {
+    font-size: 25px;
+    position: absolute;
+    left: 13%;
+    height: 60px;
+    width: 60px;
+    display: grid;
+    place-items: center;
+    background: var(--secondaryColor);
+}
+
+ .close {
+    display: none;
+}
+
+ .navbar {
+    height: 80px;
+    width: 100%;
+    display: grid;
+    place-items: center;
+    background: var(--secondaryColor);
+    border: 1px solid var(--secondaryColor);
+    z-index: 999;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+ .navbar ul li a {
+    color: #fff;
+    text-decoration: none;
+    height: 60px;
+    width: 170px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    border-bottom: 1px solid var(--secondaryColor);
+}
+
+ .navbar ul li a:hover,
+ .navbar ul .active a {
+    background: #e2e2e2;
+    color: var(--secondaryColor);
+}
+
+ .navbar ul li a i {
+    margin: 0 10px;
+    font-size: 20px;
+    border: none;
+}
+
+ .navbar ul li ul {
+    background: var(--secondaryColor);
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    display: none;
+}
+
+ .navbar ul li ul li a {
+    color: #fff;
+    padding: 0 20px;
+}
+
+ .navbar ul li:hover>ul {
+    display: block;
+}
+
+ .navbar ul li ul li a:hover {
+    background: #e2e2e2;
+    color: var(--secondaryColor);
+}
+
+@media only screen and (max-width: 1240px) {
+    #container #section #content .post {
+        display: grid;
+        grid-template-columns: repeat(4, 200px);
+    }
+}
+
+@media only screen and (max-width: 1030px) {
+    #container #section #content .post {
+        display: grid;
+        grid-template-columns: repeat(3, 200px);
+    }
+
+    /* responsive navigation bar */
+    #container #navBtn {
+        display: block;
+    }
+
+    #container .navbar {
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: auto;
+        width: 300px;
+        overflow: inherit;
+    }
+
+    #container .navbar ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #container .navbar ul li a {
+        width: 300px;
+    }
+
+    #container .navbar ul li ul li a {
+        width: 300px;
+    }
+
+    #container .navbar .close {
+        height: 60px;
+        width: 60px;
+        display: grid;
+        place-items: center;
+        position: absolute;
+        right: -60px;
+        top: 0;
+        background: var(--secondaryColor);
+        color: #fff;
+        border-radius: 0 30px 0 0;
+        font-size: 22px;
+    }
+}
+
+@media only screen and (max-width: 730px) {
+    #container #section #content .post {
+        display: grid;
+        grid-template-columns: repeat(2, 200px);
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    #container #section #content .post {
+        display: grid;
+        grid-template-columns: repeat(1, 100%);
+        padding: 0px 20px;
+    }
+
+    #container #section #content .post .postCards {
+        width: 100%;
+        height: auto;
+    }
+
+    #container #section #content .post .postCards a img {
+        width: 100%;
+        height: auto;
+    }
+
+    #container #section #content .post .postCards a .postTitle {
+        height: auto;
+    }
+
+    #container .header {
+        height: 300px;
+        width: 50px;
+        position: absolute;
+        right: 5px;
+        top: 0;
+        background: transparent;
+    }
+
+    #container .header .socialLinks {
+        right: 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #container .header .socialLinks a {
+        background: var(--secondaryColor);
+        ;
+        margin: 5px 10px;
+    }
+
+    #container .header .socialLinks a i {
+        color: #fff;
+    }
+
+    #container .navbar {
+        width: 100%;
+        border: none;
+    }
+
+    #container .navbar ul {
+        width: 100%;
+    }
+
+    #container .navbar ul li a {
+        width: 100%;
+    }
+
+    #container .navbar ul li ul li a {
+        width: 100%;
+    }
+
+    #container .navbar .close {
+        position: absolute;
+        right: 5px;
+    }
+
+    #container #pagination {
+        left: 0;
+    }
+}
+
+@media only screen and (max-width: 310px) {
+    #container .banner h2 {
+        font-size: 40px;
+    }
+}
+
+@media only screen and (max-width: 220px) {
+    #container .banner h2 {
+        font-size: 30px;
+    }
+
+    #container .banner p {
+        font-size: 15px;
+    }
+}
