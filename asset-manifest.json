@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/netfliyTest/static/css/main.de132bd2.css",
+    "main.js": "/netfliyTest/static/js/main.46fd1b22.js",
+    "index.html": "/netfliyTest/index.html",
+    "main.de132bd2.css.map": "/netfliyTest/static/css/main.de132bd2.css.map",
+    "main.46fd1b22.js.map": "/netfliyTest/static/js/main.46fd1b22.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.de132bd2.css",
+    "static/js/main.46fd1b22.js"
+  ]
+}
