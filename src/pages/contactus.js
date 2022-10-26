@@ -15,7 +15,7 @@ const Contactus = () => {
 
     const contact = { name, email, phone, message };
 
-    const response = await fetch("/contactus", {
+    const response = await fetch(`/contactus`, {
       method: "POST",
       body: JSON.stringify(contact),
       headers: {

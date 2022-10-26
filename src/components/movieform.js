@@ -16,7 +16,7 @@ const MovieForm = (props) => {
     e.preventDefault();
     let obj = JSON.parse(jsonn);
     if(password==="1237"){
-      const response = await fetch("/api/movies", {
+      const response = await fetch(`/api/movies`, {
         method: "POST",
         body: JSON.stringify(obj),
         headers: {
