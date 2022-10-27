@@ -15,7 +15,7 @@ const SingleMovie = () => {
 
   useEffect(() => {
     const fetchMovie = async () => {
-      const response = await fetch(`/api/movies/${id}`);
+      const response = await fetch(`https://moviewars2.herokuapp.com/api/movies/${id}`);
       const json = await response.json();
 
       if (response.ok) {

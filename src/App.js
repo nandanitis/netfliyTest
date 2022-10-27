@@ -9,6 +9,7 @@ import SingleMovie from "./pages/singleMovie";
 import Tvshow from "./pages/Tvshows";
 import SingleTvshow from "./pages/singleTvshow";
 import Contactus from "./pages/contactus";
+// "proxy": "https://moviewars2.herokuapp.com",
 
 
 function App() {

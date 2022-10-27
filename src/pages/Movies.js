@@ -17,7 +17,7 @@ const Movies = () => {
 
   useEffect(() => {
     const fetchMovies = async () => {
-      const response = await fetch("/api/movies");
+      const response = await fetch("https://moviewars2.herokuapp.com/api/movies");
       const json = await response.json();
 
       if (response.ok) {
@@ -29,7 +29,7 @@ const Movies = () => {
   }, []);
 
   const handleDelete = async(_id) =>{
-    const response = await fetch('/api/movies/'+_id,{
+    const response = await fetch('https://moviewars2.herokuapp.com/api/movies/'+_id,{
       method:'DELETE'
     })
     const json = await response.json()

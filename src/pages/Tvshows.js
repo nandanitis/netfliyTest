@@ -16,7 +16,7 @@ const Tvshow = () => {
 
   useEffect(() => {
     const fetchMovies = async () => {
-      const response = await fetch(`/api/tvshows`);
+      const response = await fetch("https://moviewars2.herokuapp.com/api/tvshows");
       const json = await response.json();
 
       if (response.ok) {
